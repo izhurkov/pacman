@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body bgcolor="#1a1a1a">
+	<div id="container">
+		<div id="menu-container">
+			<div id="menu">
+			    <ul>
+			    	<li>
+			    		<font id="head-text">PACMAN </font>
+			    	</li>
+			        <li><a href="#">
+			        	<img class="restarter" src="img/restart-96.png" title="Restart the Game">
+			        	</a></li>
+			        <li><a href="#" >
+			        	<img class="hidder-leaderboard" src="img/leaderboard-96.png" title="Veiw a Leaderboard">
+			        	</a></li>
+			        <li><a href="#">
+			        	<img class="hidder-help" src="img/help-96.png" title="View a Help">
+			   			</a></li>
+			    </ul>
+			</div>
+		</div>
+		<div id="game-container">
+			<div id="leaderboard-container">
+				<div id="leaderboard">
+					<font class="text"> Leaderboard:
+					<br>
+					<font class="text" id="leader-list"></font>
+					<font class="text" id="last-score">
+				</div>
+			</div>
+			<div id="canvas-container">
+					<canvas id="canvas"></canvas>
+					<input type="text" style="position:absolute;width:300px;display: none;" />
+			</div>
+			<div id="help-container">
+				<div id="help" font>
+					<font class="text">Use arrows for moving:</font>
+					<br>
+					<img src="img/help-1.png" width="96px">
+					<br>
+					<br>
+					<font class="text">
+						P or SPACE for pause
+					</font>
+					<br>
+					<br>
+					<font class="text">
+						For restart click on:
+					</font>
+					<br>
+					<img src="img/restart-96.png" width="24px">
+					<br>
+				</div>
+			</div>
+			
+		</div>
+		<div id="footer">
+		 	<font class="text">
+				<!-- Special for AR#ALID#A -->
+			</font>
+		</div>
+	</div>
+	<script type="text/javascript" src="jquery-3.3.1.js" async"></script>
+	<script type="text/javascript" src="pacman.js" async></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".hidder-leaderboard").click(function(){
+			$("#leaderboard").slideToggle("slow");
+				return false;
+		});
+		$(".hidder-help").click(function(){
+			$("#help").slideToggle("slow");
+			    return false;
+		});
+		
+	});
+	</script>
+</body>
+</html>

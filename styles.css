@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+body{
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px; 
+}
+#container #menu-container #menu{
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
+
+#container #menu-container {
+	background: #101010;
+	float: left;
+	position: relative;
+	width: 100%;
+}
+
+#container #menu-container #menu ul{
+    list-style: none;
+    padding: 0px;
+    position: relative;
+    left: 50%;
+}
+
+#container #menu-container #menu li{
+	float: left;
+	position: relative;
+}
+
+#container #menu-container #menu a{
+    text-decoration: none;
+    margin: 0px;
+    float: left;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap;
+    height: 48px;
+}
+
+font{
+	font-family: ocr a std;
+	color: #f0dc28;
+}
+
+#container #menu-container #menu img{
+    width: 48px;
+}
+
+#container #menu-container #menu a:hover{
+	background: #1f1f1f;
+}
+
+#container #menu-container #head-text {
+	font-size: 48pt;
+	padding: 8px;
+}
+
+#container #game-container{
+	margin: 0 auto;
+}
+
+#canvas-container{
+	display: block;
+	float: left;
+    padding: 16px 8px 0px;
+}
+
+#leaderboard-container, #help-container{
+	display: block;
+	float: left;
+    width: 300px;
+    padding: 24px 10px 8px;
+}
+
+#help{
+    margin: auto;
+	text-align: center;
+    width: 260px;
+    height: 100%;
+	border: 3px solid #f0dc28;
+	border-radius: 8px;
+    padding: 8px;
+	background: #0d0d0d;
+}
+
+#canvas{
+	margin: auto;
+	border: 3px solid #3c28f0;
+	border-radius: 8px;
+    padding: 0px 0px 0px;
+}
+
+#leaderboard{
+	display: none;
+    margin: auto;
+    width: 260px;
+    height: 100%;
+	background: #0d0d0d;
+	border: 3px solid #f0dc28;
+	border-radius: 8px;
+    padding: 8px;
+}
+
+.text{
+	text-align: center;
+	font-size: 12pt;
+}
+
+#leader-list{
+	text-align: left;
+	font-size: 12pt;
+}
+
+#footer{
+	height: 25px;
+	padding-top: 8px;
+	background: #101010;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
